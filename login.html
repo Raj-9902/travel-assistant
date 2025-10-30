@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Travel Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: url('https://source.unsplash.com/1600x900/?travel,adventure,mountains') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 400px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .login-container:hover {
+            transform: translateY(-5px);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            padding-left: 45px;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .input-group input:focus {
+            border-color: #0056b3;
+            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6);
+        }
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #007BFF;
+            font-size: 18px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .forgot-pass {
+            display: block;
+            margin-top: 12px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .forgot-pass:hover {
+            text-decoration: underline;
+        }
+        .new-user {
+            display: block;
+            margin-top: 15px;
+            color: #28a745;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .new-user:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome to Travel Assistant</h2>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+
+            <input type="password" placeholder="Password" required>
+	    
+        </div>
+	<a href = "aiui.html"><button class="btn">Login</button></a>
+        
+        <a href="pass.html" class="forgot-pass">Forgot Password?</a>
+        <a href="register.html" class="new-user">New User? Sign Up</a>
+    </div>
+</body>
+</html>
